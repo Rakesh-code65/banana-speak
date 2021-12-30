@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Banana speak</title>
    <style>
+       body{
+           margin: auto;
+           justify-content: center;
+           align-items: center;
+       }
        textarea{
            width: 80%;
            height: 20vh;
@@ -13,26 +18,47 @@
            padding: 1rem;
        }
        #Output{
-     border: 1px solid black;
+     border: 2px solid black;
      height: 10vh;
      width: 80%;
      margin: 1rem;
      padding: 1rem;
        }
+       h1{
+           text-align: center;
+       }
+       .container-center{
+           
+            margin: auto;
+            width: 50%;
+            border: 3px solid green;
+            padding: 10px;
+       }
+       #btn-translate{
+           text-align: center;
+       }
    </style>
 </head>
 <body>
     <h1>
-        Talk banana
+        MINIONS Translator 
     </h1>
-    <textarea id="txt-input" 
-    placeholder="put your sentence in english here and we will convert it into banana"></textarea>
-    <button id="btn-translate">Translate</button>
-    <div style="font-size: large;"> OUTPUT will create here👇</div>
-    <div id="Output"></div>
-    <script src="app.js" type="text/javascript"></script>
-    <footer>
-        <div id="footer"></div>
-    </footer>
+    <div class="container-center">
+        
+        <textarea id="txt-input" 
+        placeholder="put your sentence in english here and we will convert it into banana"></textarea>
+        <button id="btn-translate">Translate</button>
+        <div style="font-size: large;"> OUTPUT Will Create Here👇</div>
+        <div id="Output"  placeholder="In Minions Speak.....>
+        
+        </div>
+    </div>
+        <script src="app.js" type="text/javascript"></script>
+        <footer>
+            <div id="footer"></div>
+        </footer>
+
+   
+   
 </body>
 </html>
